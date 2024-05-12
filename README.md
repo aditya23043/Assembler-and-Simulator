@@ -7,11 +7,15 @@
 ## Simulator
 - The input for the simulator is the binary file converted by the assembler. The simulator, after the execution of every instruction, prints the register values in any chosen file. The simulator will print the memory stats after the execution of the mentioned Virtual Halt instruction. 
 
+# Problem
+- Most of the assemblers I found online did not support most of the instructions I wanted them to. Furthermore, in my journey of computer graphics and building a game engine, I felt the need to make the assembler myself from scratch.
+- The simulator is a complementary program to my assembler which provided fundamental information about the program and its execution essential for programming as well as debugging.
+
 # How to use?
 - Assembler\
-`python3 Assembler.py <*.asm> <*.bin>`
+`python3 Assembler.py <*.asm> <*.bin>` or `make asm`
 - Simulator\
-`python3 Simulator.py <*.bin> <output>`
+`python3 Simulator.py <*.bin> <output>` or `make sim`
 - Here \<output\> is a text file which contains all register and memory stats during and after the program execution
 
 # Supported Instructions
